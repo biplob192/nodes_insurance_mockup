@@ -22,6 +22,53 @@
                     </a>
 
                 </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>
+                            File
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{route('files.index')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>
+                                    All File
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{route('files.create')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>
+                                    Create File
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- <li class="nav-item">
+                    <a href="{{route('files.index')}}" class="nav-link">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>
+                            File
+                        </p>
+                    </a>
+
+                </li>
+                <li class="nav-item">
+                    <a href="{{route('files.create')}}" class="nav-link">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>
+                            Create File
+                        </p>
+                    </a>
+
+                </li> -->
                 @role('admin')
                 <li class="nav-item">
                     <a href="{{route('employee.index')}}" class="nav-link">

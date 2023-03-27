@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FileController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\GoogleController;
@@ -44,6 +45,9 @@ Route::group(['middleware' => 'login'], function () {
 
         Route::post('attendance', [AttendanceController::class, 'store'])->name('attendance.store');
         Route::get('attendance/{id}', [AttendanceController::class, 'show'])->name('attendance.show');
+
+        Route::get('files', [FileController::class, 'index'])->name('files.index');
+        Route::get('create', [FileController::class, 'create'])->name('files.create');
     });
 });
 
