@@ -21,6 +21,113 @@ Dashboard
                                 <h5 class="card-title"><strong>ADMIN DASHBOARD CONTANT</strong></h5>
                             </div>
                             <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-3 col-6">
+                                        <!-- small card -->
+                                        <div class="small-box bg-info">
+                                            <div class="inner">
+                                                <h3>150</h3>
+
+                                                <p>New Orders</p>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6">
+                                        <!-- small card -->
+                                        <div class="small-box bg-info">
+                                            <div class="inner">
+                                                <h3>150</h3>
+
+                                                <p>New Orders</p>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6">
+                                        <!-- small card -->
+                                        <div class="small-box bg-info">
+                                            <div class="inner">
+                                                <h3>150</h3>
+
+                                                <p>New Orders</p>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6">
+                                        <!-- small card -->
+                                        <div class="small-box bg-info">
+                                            <div class="inner">
+                                                <h3>150</h3>
+
+                                                <p>New Orders</p>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6">
+                                        <!-- small card -->
+                                        <div class="small-box bg-info">
+                                            <div class="inner">
+                                                <h3>150</h3>
+
+                                                <p>New Orders</p>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6">
+                                        <!-- small card -->
+                                        <div class="small-box bg-info">
+                                            <div class="inner">
+                                                <h3>150</h3>
+
+                                                <p>New Orders</p>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6">
+                                        <!-- small card -->
+                                        <div class="small-box bg-info">
+                                            <div class="inner">
+                                                <h3>150</h3>
+
+                                                <p>New Orders</p>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6">
+                                        <!-- small card -->
+                                        <div class="small-box bg-info">
+                                            <div class="inner">
+                                                <h3>150</h3>
+
+                                                <p>New Orders</p>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -56,86 +163,86 @@ Dashboard
 @section('Script')
 <script src="vendor/sweetalert/sweetalert.all.js"></script>
 <script>
-    $(document).ready(function() {
-        var user_id = $('#user_id').val();
-        $('#complete_check_in').hide();
+$(document).ready(function() {
+    var user_id = $('#user_id').val();
+    $('#complete_check_in').hide();
 
-        if(user_id != null){
-            $('#check_out').hide();
+    if (user_id != null) {
+        $('#check_out').hide();
 
-            $.ajaxSetup({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                }
-            });
-
-            $.ajax({
-                type: "GET",
-                url: "attendance/"+user_id,
-                success: function(data) {
-                    // console.log(data);
-
-                    if(data.check_in){
-                        $('#check_in').hide();
-                        $('#check_out').show();
-                    }
-                    if(data.check_out){
-                        $('#check_out').hide();
-                        $('#check_in').hide();
-                        $('#complete_check_in').show();
-                    }
-                }
-            });
-        }
-    });
-
-
-    $(function() {
-        $('#check_in').on("click", function() {
-            $('#check_in').hide();
-            $('#check_out').show();
-            var user_id = $('#user_id').val();
-
-            $.ajax({
-                type: "POST",
-                url: "attendance",
-                data: {
-                user_id: user_id,
-                },
-                success: function(data) {
-                    // console.log(data);
-
-                    swal.fire({
-                    title: 'Attendance',
-                    text: data.message,
-                    })
-                }
-            });
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
         });
-    });
 
-    $(function() {
-        $('#check_out').on("click", function() {
-            $('#check_out').hide();
-            $('#complete_check_in').show();
-            var user_id = $('#user_id').val();
+        $.ajax({
+            type: "GET",
+            url: "attendance/" + user_id,
+            success: function(data) {
+                // console.log(data);
 
-            $.ajax({
+                if (data.check_in) {
+                    $('#check_in').hide();
+                    $('#check_out').show();
+                }
+                if (data.check_out) {
+                    $('#check_out').hide();
+                    $('#check_in').hide();
+                    $('#complete_check_in').show();
+                }
+            }
+        });
+    }
+});
+
+
+$(function() {
+    $('#check_in').on("click", function() {
+        $('#check_in').hide();
+        $('#check_out').show();
+        var user_id = $('#user_id').val();
+
+        $.ajax({
             type: "POST",
             url: "attendance",
             data: {
-            user_id: user_id,
+                user_id: user_id,
             },
             success: function(data) {
                 // console.log(data);
 
                 swal.fire({
-                title: 'Attendance',
-                text: data.message,
+                    title: 'Attendance',
+                    text: data.message,
                 })
             }
-            });
         });
     });
+});
+
+$(function() {
+    $('#check_out').on("click", function() {
+        $('#check_out').hide();
+        $('#complete_check_in').show();
+        var user_id = $('#user_id').val();
+
+        $.ajax({
+            type: "POST",
+            url: "attendance",
+            data: {
+                user_id: user_id,
+            },
+            success: function(data) {
+                // console.log(data);
+
+                swal.fire({
+                    title: 'Attendance',
+                    text: data.message,
+                })
+            }
+        });
+    });
+});
 </script>
 @endsection
