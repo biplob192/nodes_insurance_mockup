@@ -6,6 +6,8 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\GoogleController;
 use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\InspectorController;
 use App\Http\Controllers\AttendanceController;
 
 Route::get('register', [AuthController::class, 'registerView'])->name('auth.register_view');
@@ -37,6 +39,9 @@ Route::group(['middleware' => 'login'], function () {
         Route::get('attendance/{id}/edit', [AttendanceController::class, 'edit'])->name('attendance.edit');
         Route::put('attendance/{id}', [AttendanceController::class, 'update'])->name('attendance.update');
         Route::delete('attendance/{id}', [AttendanceController::class, 'destroy'])->name('attendance.destroy');
+
+        Route::get('categories', [CategoryController::class, 'index'])->name('categories.index');
+        Route::get('inspectors', [InspectorController::class, 'index'])->name('inspectors.index');
     });
 
 
