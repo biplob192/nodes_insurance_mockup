@@ -66,7 +66,7 @@ Route::group(['middleware' => 'login'], function () {
 
         Route::get('files', [FileController::class, 'index'])->name('files.index');
         Route::get('create', [FileController::class, 'create'])->name('files.create');
-        Route::get('show', [FileController::class, 'show'])->name('files.show');
+        Route::get('details', [FileController::class, 'show'])->name('files.show');
     });
 });
 
