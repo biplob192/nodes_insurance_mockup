@@ -1,7 +1,7 @@
 @extends('master')
 
 @section('Title')
-File
+Dashboard
 @endsection
 
 @section('Style')
@@ -64,8 +64,7 @@ File
                                                             <div class="dropdown-menu" role="menu">
                                                                 <a class="dropdown-item" href="#">Edit</a>
                                                                 <a class="dropdown-item" href="#">Delete</a>
-                                                                <a class="dropdown-item"
-                                                                    href="{{route('files.show')}}">More</a>
+                                                                <a class="dropdown-item" href="#">More</a>
                                                                 <a class="dropdown-item" href="#">Details</a>
                                                                 <a class="dropdown-item" href="#">Download</a>
                                                             </div>

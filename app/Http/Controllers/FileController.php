@@ -17,4 +17,10 @@ class FileController extends Controller
         $files = 10;
         return view('file.create', ['files' => $files]);
     }
+    public function show()
+    {
+        $files = 10;
+        return view('file.show', ['files' => $files]);
+    }
+    
 }
