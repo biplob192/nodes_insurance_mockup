@@ -17,7 +17,52 @@ File
                     <div class="card-header">
                         <h5 class="card-title"><strong>CATEGORY LIST</strong></h5>
                         <div class="float-sm-right ml-1">
-                            <button type="button" class="btn btn-block btn-default">Add New</button>
+                            <button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-lg">Add New</button>
+                        </div>
+                        <div class="modal fade" id="modal-lg">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Add New Category</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="{{route('users.store')}}" method="post" enctype="multipart/form-data">
+                                            @csrf
+                                            <div class="card-body">
+                                                <div class="form-group">
+                                                    <label for="name">Category Name</label>
+                                                    <input type="text" class="form-control" id="name" placeholder="Enter category name" name="name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="user_type">Category Type</label>
+                                                    <select class="form-control" name="user_type">
+                                                        <option value="1">Category Type</option>
+                                                        <option value="2" selected>Another Type</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="description">Description</label>
+                                                    <textarea type="textarea" class="form-control" id="description" placeholder="Enter description" name="description"></textarea>
+                                                </div>
+                                            </div>
+                                            <!-- /.card-body -->
+
+                                            <!-- <div class="card-footer">
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                            </div> -->
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer justify-content-between">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                                <!-- /.modal-content -->
+                            </div>
+                            <!-- /.modal-dialog -->
                         </div>
                     </div>
                     <div class="card-body">
@@ -43,7 +88,7 @@ File
                                             <thead>
                                                 <tr>
                                                     <th>ID</th>
-                                                    <th>Type</th>
+                                                    <th>Name</th>
                                                     <th>Description</th>
                                                     <th>Action</th>
                                                 </tr>

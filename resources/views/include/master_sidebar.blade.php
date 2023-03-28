@@ -25,7 +25,7 @@
 
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <i class="nav-icon fas fa-folder"></i>
                         <p>
                             File
                             <i class="right fas fa-angle-left"></i>
@@ -51,46 +51,13 @@
                     </ul>
                 </li>
 
-                <!-- <li class="nav-item">
-                    <a href="{{route('files.index')}}" class="nav-link">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
-                        <p>
-                            File
-                        </p>
-                    </a>
 
-                </li>
-                <li class="nav-item">
-                    <a href="{{route('files.create')}}" class="nav-link">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
-                        <p>
-                            Create File
-                        </p>
-                    </a>
-
-                </li> -->
                 @role('admin')
-                <li class="nav-item">
-                    <a href="{{route('employee.index')}}" class="nav-link">
-                        <i class="nav-icon fas fa-users"></i>
-                        <p>
-                            Employee
-                        </p>
-                    </a>
-                </li>
                 <li class="nav-item">
                     <a href="{{route('attendance.index')}}" class="nav-link">
                         <i class="nav-icon fas fa-user-clock"></i>
                         <p>
                             Attendance
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="{{route('users.create')}}" class="nav-link">
-                        <i class="nav-icon fas fa-user-plus"></i>
-                        <p>
-                            New User
                         </p>
                     </a>
                 </li>

@@ -17,7 +17,84 @@ File
                     <div class="card-header">
                         <h5 class="card-title"><strong>INSPECTOR LIST</strong></h5>
                         <div class="float-sm-right ml-1">
-                            <button type="button" class="btn btn-block btn-default">Add New</button>
+                            <button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-lg">Add New</button>
+                        </div>
+                        <div class="modal fade" id="modal-lg">
+                            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Add New Inspector</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="{{route('users.store')}}" method="post" enctype="multipart/form-data">
+                                            @csrf
+                                            <div class="card-body">
+                                                <div class="form-group">
+                                                    <label for="name">Full Name</label>
+                                                    <input type="text" class="form-control" id="name" placeholder="Enter full name" name="name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="user_type">User Type</label>
+                                                    <select class="form-control" name="user_type">
+                                                        <option value="1">Admin</option>
+                                                        <option value="2" selected>Employee</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="email">Email address</label>
+                                                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="address">Address</label>
+                                                    <input type="text" class="form-control" id="address" placeholder="Enter address" name="address">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="phone">Phone</label>
+                                                    <input type="text" class="form-control" id="phone" placeholder="Enter phone" name="phone">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="emergency_contact">Emergency Phone</label>
+                                                    <input type="text" class="form-control" id="emergency_contact" placeholder="Enter emergency_contact" name="emergency_contact">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="password">Password</label>
+                                                    <input type="password" class="form-control" id="password" placeholder="Password" name="password">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="password_confirmation">Confirm Password</label>
+                                                    <input type="password" class="form-control" id="password_confirmation" placeholder="Confirm Password" name="password_confirmation">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="profile_image">Profile Image</label>
+                                                    <div class="input-group">
+                                                        <div class="custom-file">
+                                                            <input type="file" class="custom-file-input" id="profile_image" name="profile_image">
+                                                            <label class="custom-file-label" for="profile_image">Choose file</label>
+                                                        </div>
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text">Upload</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /.card-body -->
+
+                                            <!-- <div class="card-footer">
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                            </div> -->
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer justify-content-between">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                                <!-- /.modal-content -->
+                            </div>
+                            <!-- /.modal-dialog -->
                         </div>
                     </div>
                     <div class="card-body">
