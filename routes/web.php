@@ -41,7 +41,20 @@ Route::group(['middleware' => 'login'], function () {
         Route::delete('attendance/{id}', [AttendanceController::class, 'destroy'])->name('attendance.destroy');
 
         Route::get('categories', [CategoryController::class, 'index'])->name('categories.index');
+        Route::get('categories/create', [CategoryController::class, 'create'])->name('categories.create');
+        Route::post('categories', [CategoryController::class, 'store'])->name('categories.store');
+        Route::get('categories/{id}', [CategoryController::class, 'show'])->name('categories.show');
+        Route::get('categories/{id}/edit', [CategoryController::class, 'edit'])->name('categories.edit');
+        Route::put('categories/{id}', [CategoryController::class, 'update'])->name('categories.update');
+        Route::delete('categories/{id}', [CategoryController::class, 'destroy'])->name('categories.destroy');
+
         Route::get('inspectors', [InspectorController::class, 'index'])->name('inspectors.index');
+        Route::get('inspectors/create', [InspectorController::class, 'create'])->name('inspectors.create');
+        Route::post('inspectors', [InspectorController::class, 'store'])->name('inspectors.store');
+        Route::get('inspectors/{id}', [InspectorController::class, 'show'])->name('inspectors.show');
+        Route::get('inspectors/{id}/edit', [InspectorController::class, 'edit'])->name('inspectors.edit');
+        Route::put('inspectors/{id}', [InspectorController::class, 'update'])->name('inspectors.update');
+        Route::delete('inspectors/{id}', [InspectorController::class, 'destroy'])->name('inspectors.destroy');
     });
 
 
