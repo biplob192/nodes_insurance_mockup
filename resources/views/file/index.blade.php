@@ -1,7 +1,7 @@
 @extends('master')
 
 @section('Title')
-File
+File Index
 @endsection
 
 @section('Style')
