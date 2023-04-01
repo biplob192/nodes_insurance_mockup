@@ -24,9 +24,7 @@ File Index
                                     <div class="card-header">
                                         <div class="card-tools">
                                             <div class="input-group input-group-sm" style="width: 150px;">
-                                                <input type="text" name="table_search" class="form-control float-right"
-                                                    placeholder="Search">
-
+                                                <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
                                                 <div class="input-group-append">
                                                     <button type="submit" class="btn btn-default">
                                                         <i class="fas fa-search"></i>
@@ -54,16 +52,13 @@ File Index
                                                         doner.</td>
                                                     <td>
                                                         <div class="btn-group">
-                                                            <button type="button"
-                                                                class="btn btn-default dropdown-toggle dropdown-icon"
-                                                                data-toggle="dropdown">
+                                                            <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
                                                                 Action<span class="sr-only">Toggle Dropdown</span>
                                                             </button>
                                                             <div class="dropdown-menu" role="menu">
                                                                 <a class="dropdown-item" href="#">Edit</a>
                                                                 <a class="dropdown-item" href="#">Delete</a>
-                                                                <a class="dropdown-item"
-                                                                    href="{{route('files.show')}}">More</a>
+                                                                <a class="dropdown-item" href="{{route('files.show')}}">More</a>
                                                                 <a class="dropdown-item" href="#">Details</a>
                                                                 <a class="dropdown-item" href="#">Download</a>
                                                             </div>
@@ -77,16 +72,13 @@ File Index
                                                         doner.</td>
                                                     <td>
                                                         <div class="btn-group">
-                                                            <button type="button"
-                                                                class="btn btn-default dropdown-toggle dropdown-icon"
-                                                                data-toggle="dropdown">
+                                                            <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
                                                                 Action<span class="sr-only">Toggle Dropdown</span>
                                                             </button>
                                                             <div class="dropdown-menu" role="menu">
                                                                 <a class="dropdown-item" href="#">Edit</a>
                                                                 <a class="dropdown-item" href="#">Delete</a>
-                                                                <a class="dropdown-item"
-                                                                    href="{{route('files.show')}}">More</a>
+                                                                <a class="dropdown-item" href="{{route('files.show')}}">More</a>
                                                                 <a class="dropdown-item" href="#">Details</a>
                                                                 <a class="dropdown-item" href="#">Download</a>
                                                             </div>
@@ -100,16 +92,13 @@ File Index
                                                         doner.</td>
                                                     <td>
                                                         <div class="btn-group">
-                                                            <button type="button"
-                                                                class="btn btn-default dropdown-toggle dropdown-icon"
-                                                                data-toggle="dropdown">
+                                                            <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
                                                                 Action<span class="sr-only">Toggle Dropdown</span>
                                                             </button>
                                                             <div class="dropdown-menu" role="menu">
                                                                 <a class="dropdown-item" href="#">Edit</a>
                                                                 <a class="dropdown-item" href="#">Delete</a>
-                                                                <a class="dropdown-item"
-                                                                    href="{{route('files.show')}}">More</a>
+                                                                <a class="dropdown-item" href="{{route('files.show')}}">More</a>
                                                                 <a class="dropdown-item" href="#">Details</a>
                                                                 <a class="dropdown-item" href="#">Download</a>
                                                             </div>
@@ -123,16 +112,13 @@ File Index
                                                         doner.</td>
                                                     <td>
                                                         <div class="btn-group">
-                                                            <button type="button"
-                                                                class="btn btn-default dropdown-toggle dropdown-icon"
-                                                                data-toggle="dropdown">
+                                                            <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
                                                                 Action<span class="sr-only">Toggle Dropdown</span>
                                                             </button>
                                                             <div class="dropdown-menu" role="menu">
                                                                 <a class="dropdown-item" href="#">Edit</a>
                                                                 <a class="dropdown-item" href="#">Delete</a>
-                                                                <a class="dropdown-item"
-                                                                    href="{{route('files.show')}}">More</a>
+                                                                <a class="dropdown-item" href="{{route('files.show')}}">More</a>
                                                                 <a class="dropdown-item" href="#">Details</a>
                                                                 <a class="dropdown-item" href="#">Download</a>
                                                             </div>

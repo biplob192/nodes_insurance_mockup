@@ -11,214 +11,214 @@ Dashboard
 <!-- Main content -->
 <div class="content">
     <div class="container-fluid">
+        <!-- <div class="content"> -->
         @role('admin')
-        <div class="content">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class=" col-md-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h5 class="card-title"><strong>ADMIN DASHBOARD CONTANT</strong></h5>
-                            </div>
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-3 col-6">
-                                        <!-- small card -->
-                                        <div class="small-box bg-info">
-                                            <div class="inner">
-                                                <h3>150</h3>
+        <div class="row">
+            <div class=" col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title"><strong>ADMIN DASHBOARD CONTANT</strong></h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-3 col-6">
+                                <!-- small card -->
+                                <div class="small-box bg-info">
+                                    <div class="inner">
+                                        <h3>150</h3>
 
-                                                <p>New Orders</p>
-                                            </div>
-                                            <div class="icon">
-                                                <i class="fas fa-shopping-cart"></i>
-                                            </div>
-                                        </div>
+                                        <p>New Orders</p>
                                     </div>
-                                    <div class="col-lg-3 col-6">
-                                        <!-- small card -->
-                                        <div class="small-box bg-info">
-                                            <div class="inner">
-                                                <h3>150</h3>
-
-                                                <p>New Orders</p>
-                                            </div>
-                                            <div class="icon">
-                                                <i class="fas fa-shopping-cart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-6">
-                                        <!-- small card -->
-                                        <div class="small-box bg-info">
-                                            <div class="inner">
-                                                <h3>150</h3>
-
-                                                <p>New Orders</p>
-                                            </div>
-                                            <div class="icon">
-                                                <i class="fas fa-shopping-cart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-6">
-                                        <!-- small card -->
-                                        <div class="small-box bg-info">
-                                            <div class="inner">
-                                                <h3>150</h3>
-
-                                                <p>New Orders</p>
-                                            </div>
-                                            <div class="icon">
-                                                <i class="fas fa-shopping-cart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-6">
-                                        <!-- small card -->
-                                        <div class="small-box bg-info">
-                                            <div class="inner">
-                                                <h3>150</h3>
-
-                                                <p>New Orders</p>
-                                            </div>
-                                            <div class="icon">
-                                                <i class="fas fa-shopping-cart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-6">
-                                        <!-- small card -->
-                                        <div class="small-box bg-info">
-                                            <div class="inner">
-                                                <h3>150</h3>
-
-                                                <p>New Orders</p>
-                                            </div>
-                                            <div class="icon">
-                                                <i class="fas fa-shopping-cart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-6">
-                                        <!-- small card -->
-                                        <div class="small-box bg-info">
-                                            <div class="inner">
-                                                <h3>150</h3>
-
-                                                <p>New Orders</p>
-                                            </div>
-                                            <div class="icon">
-                                                <i class="fas fa-shopping-cart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-6">
-                                        <!-- small card -->
-                                        <div class="small-box bg-info">
-                                            <div class="inner">
-                                                <h3>150</h3>
-
-                                                <p>New Orders</p>
-                                            </div>
-                                            <div class="icon">
-                                                <i class="fas fa-shopping-cart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="card card-primary card-outline">
-                                            <div class="card-header">
-                                                <h3 class="card-title">
-                                                    <i class="far fa-chart-bar"></i>
-                                                    Donut Chart
-                                                </h3>
-
-                                                <div class="card-tools">
-                                                    <button type="button" class="btn btn-tool"
-                                                        data-card-widget="collapse">
-                                                        <i class="fas fa-minus"></i>
-                                                    </button>
-                                                    <button type="button" class="btn btn-tool"
-                                                        data-card-widget="remove">
-                                                        <i class="fas fa-times"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div class="card-body">
-                                                <div id="donut-chart" style="height: 300px;"></div>
-                                            </div>
-                                            <!-- /.card-body-->
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <!-- Bar chart -->
-                                        <div class="card card-primary card-outline">
-                                            <div class="card-header">
-                                                <h3 class="card-title">
-                                                    <i class="far fa-chart-bar"></i>
-                                                    Bar Chart
-                                                </h3>
-
-                                                <div class="card-tools">
-                                                    <button type="button" class="btn btn-tool"
-                                                        data-card-widget="collapse">
-                                                        <i class="fas fa-minus"></i>
-                                                    </button>
-                                                    <button type="button" class="btn btn-tool"
-                                                        data-card-widget="remove">
-                                                        <i class="fas fa-times"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div class="card-body">
-                                                <div id="bar-chart" style="height: 300px;"></div>
-                                            </div>
-                                            <!-- /.card-body-->
-                                        </div>
-                                        <!-- /.card -->
-
-                                        <!-- Donut chart -->
-                                        <!-- /.card -->
+                                    <div class="icon">
+                                        <i class="fas fa-shopping-cart"></i>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            @endrole
+                            <div class="col-lg-3 col-6">
+                                <!-- small card -->
+                                <div class="small-box bg-info">
+                                    <div class="inner">
+                                        <h3>150</h3>
 
-            @role('employee')
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h5 class="card-title"><strong>EMPLOYEE DASHBOARD CONTANT</strong></h5>
+                                        <p>New Orders</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <!-- small card -->
+                                <div class="small-box bg-info">
+                                    <div class="inner">
+                                        <h3>150</h3>
+
+                                        <p>New Orders</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <!-- small card -->
+                                <div class="small-box bg-info">
+                                    <div class="inner">
+                                        <h3>150</h3>
+
+                                        <p>New Orders</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <!-- small card -->
+                                <div class="small-box bg-info">
+                                    <div class="inner">
+                                        <h3>150</h3>
+
+                                        <p>New Orders</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <!-- small card -->
+                                <div class="small-box bg-info">
+                                    <div class="inner">
+                                        <h3>150</h3>
+
+                                        <p>New Orders</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <!-- small card -->
+                                <div class="small-box bg-info">
+                                    <div class="inner">
+                                        <h3>150</h3>
+
+                                        <p>New Orders</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <!-- small card -->
+                                <div class="small-box bg-info">
+                                    <div class="inner">
+                                        <h3>150</h3>
+
+                                        <p>New Orders</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                        <div class="card-body">
-                            <a href="#" class="btn btn-primary" id="check_in">Check-In Here</a>
-                            <a href="#" class="btn btn-primary" id="complete_check_in">Attendance Completed!</a>
-                            <input type="hidden" value="{{ auth()->user()->id }}" id="user_id">
-                            <input type="hidden" value="{{ auth()->user()->roles[0]->name }}" id="user_role">
-                            <a href="#" class="btn btn-primary" id="check_out">Check-Out Here</a>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card card-primary card-outline">
+                                    <div class="card-header">
+                                        <h3 class="card-title">
+                                            <i class="far fa-chart-bar"></i>
+                                            Donut Chart
+                                        </h3>
+
+                                        <div class="card-tools">
+                                            <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                                <i class="fas fa-minus"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-tool" data-card-widget="remove">
+                                                <i class="fas fa-times"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="donut-chart" style="height: 300px;"></div>
+                                    </div>
+                                    <!-- /.card-body-->
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <!-- Bar chart -->
+                                <div class="card card-primary card-outline">
+                                    <div class="card-header">
+                                        <h3 class="card-title">
+                                            <i class="far fa-chart-bar"></i>
+                                            Bar Chart
+                                        </h3>
+
+                                        <div class="card-tools">
+                                            <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                                <i class="fas fa-minus"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-tool" data-card-widget="remove">
+                                                <i class="fas fa-times"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="bar-chart" style="height: 300px;"></div>
+                                    </div>
+                                    <!-- /.card-body-->
+                                </div>
+                                <!-- /.card -->
+
+                                <!-- Donut chart -->
+                                <!-- /.card -->
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            @endrole
-            <!-- /.row -->
-        </div><!-- /.container-fluid -->
+        </div>
+        @endrole
+
+        @role('employee')
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title"><strong>EMPLOYEE DASHBOARD CONTANT</strong></h5>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="btn btn-primary" id="check_in">Check-In Here</a>
+                        <a href="#" class="btn btn-primary" id="complete_check_in">Attendance Completed!</a>
+                        <input type="hidden" value="{{ auth()->user()->id }}" id="user_id">
+                        <input type="hidden" value="{{ auth()->user()->roles[0]->name }}" id="user_role">
+                        <a href="#" class="btn btn-primary" id="check_out">Check-Out Here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @endrole
+        <!-- /.row -->
+        <!-- </div> -->
     </div>
-    <!-- /.content -->
-    @endsection
+    <!-- /.container-fluid -->
+</div>
+<!-- /.content -->
 
-    @section('Script')
-    <script src="vendor/sweetalert/sweetalert.all.js"></script>
-    <script src="{{asset('plugins')}}/flot/jquery.flot.js"></script>
-    <script src="{{asset('plugins')}}/flot/plugins/jquery.flot.pie.js"></script>
+@endsection
 
-    <script>
+@section('Script')
+<script src="vendor/sweetalert/sweetalert.all.js"></script>
+<script src="{{asset('plugins')}}/flot/jquery.flot.js"></script>
+<script src="{{asset('plugins')}}/flot/plugins/jquery.flot.pie.js"></script>
+
+<script>
     $(document).ready(function() {
         var user_id = $('#user_id').val();
         $('#complete_check_in').hide();
@@ -300,8 +300,8 @@ Dashboard
             });
         });
     });
-    </script>
-    <script>
+</script>
+<script>
     $(function() {
         /*
          * BAR CHART
@@ -404,5 +404,5 @@ Dashboard
             '<br>' +
             Math.round(series.percent) + '%</div>'
     }
-    </script>
-    @endsection
+</script>
+@endsection
