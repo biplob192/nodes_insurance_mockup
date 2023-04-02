@@ -17,8 +17,7 @@ File
                     <div class="card-header">
                         <h5 class="card-title"><strong>File Details</strong></h5>
                         <div class="float-sm-right ml-1">
-                            <button type="button" class="btn btn-block btn-default" data-toggle="modal"
-                                data-target="#modal-lg">Add Inspection</button>
+                            <button type="button" class="btn btn-block btn-default" data-toggle="modal" data-target="#modal-lg">Add Inspection</button>
                         </div>
                         <div class="modal fade" id="modal-lg">
                             <div class="modal-dialog modal-lg">
@@ -30,14 +29,12 @@ File
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <form action="{{route('users.store')}}" method="post"
-                                            enctype="multipart/form-data">
+                                        <form action="{{route('users.store')}}" method="post" enctype="multipart/form-data">
                                             @csrf
                                             <div class="card-body">
                                                 <div class="form-group">
                                                     <label for="name">Inspection Name</label>
-                                                    <input type="text" class="form-control" id="name"
-                                                        placeholder="Enter category name" name="name">
+                                                    <input type="text" class="form-control" id="name" placeholder="Enter category name" name="name">
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="user_type">Inspection Type</label>
@@ -48,8 +45,7 @@ File
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="description">Description</label>
-                                                    <textarea type="textarea" class="form-control" id="description"
-                                                        placeholder="Enter description" name="description"></textarea>
+                                                    <textarea type="textarea" class="form-control" id="description" placeholder="Enter description" name="description"></textarea>
                                                 </div>
                                             </div>
                                             <!-- /.card-body -->
@@ -60,8 +56,7 @@ File
                                         </form>
                                     </div>
                                     <div class="modal-footer justify-content-between">
-                                        <button type="button" class="btn btn-default"
-                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                         <button type="button" class="btn btn-primary">Save changes</button>
                                     </div>
                                 </div>
@@ -94,9 +89,7 @@ File
                                                         doner.</td>
                                                     <td>
                                                         <div class="btn-group">
-                                                            <button type="button"
-                                                                class="btn btn-default dropdown-toggle dropdown-icon"
-                                                                data-toggle="dropdown">
+                                                            <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
                                                                 Status<span class="sr-only">Toggle
                                                                     Dropdown</span>
                                                             </button>
@@ -131,8 +124,7 @@ File
                                     <div class="card-header">
                                         <div class="card-tools">
                                             <div class="input-group input-group-sm" style="width: 150px;">
-                                                <input type="text" name="table_search" class="form-control float-right"
-                                                    placeholder="Search">
+                                                <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
 
                                                 <div class="input-group-append">
                                                     <button type="submit" class="btn btn-default">
@@ -162,9 +154,25 @@ File
                                                         doner.</td>
                                                     <td>
                                                         <div class="btn-group">
-                                                            <button type="button"
-                                                                class="btn btn-default dropdown-toggle dropdown-icon"
-                                                                data-toggle="dropdown">
+                                                            <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
+                                                                Action<span class="sr-only">Toggle Dropdown</span>
+                                                            </button>
+                                                            <div class="dropdown-menu" role="menu">
+                                                                <a class="dropdown-item" href="#">Delete</a>
+                                                                <a class="dropdown-item" href="{{route('files.show')}}">Download</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>183</td>
+                                                    <td>John Doe</td>
+                                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank
+                                                        fatback
+                                                        doner.</td>
+                                                    <td>
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
                                                                 Action<span class="sr-only">Toggle Dropdown</span>
                                                             </button>
                                                             <div class="dropdown-menu" role="menu">
@@ -182,29 +190,7 @@ File
                                                         doner.</td>
                                                     <td>
                                                         <div class="btn-group">
-                                                            <button type="button"
-                                                                class="btn btn-default dropdown-toggle dropdown-icon"
-                                                                data-toggle="dropdown">
-                                                                Action<span class="sr-only">Toggle Dropdown</span>
-                                                            </button>
-                                                            <div class="dropdown-menu" role="menu">
-                                                                <a class="dropdown-item" href="#">Delete</a>
-                                                                <a class="dropdown-item" href="#">Download</a>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>183</td>
-                                                    <td>John Doe</td>
-                                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank
-                                                        fatback
-                                                        doner.</td>
-                                                    <td>
-                                                        <div class="btn-group">
-                                                            <button type="button"
-                                                                class="btn btn-default dropdown-toggle dropdown-icon"
-                                                                data-toggle="dropdown">
+                                                            <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
                                                                 Action<span class="sr-only">Toggle Dropdown</span>
                                                             </button>
                                                             <div class="dropdown-menu" role="menu">
@@ -236,8 +222,7 @@ File
                                     <div class="card-header">
                                         <div class="card-tools">
                                             <div class="input-group input-group-sm" style="width: 150px;">
-                                                <input type="text" name="table_search" class="form-control float-right"
-                                                    placeholder="Search">
+                                                <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
 
                                                 <div class="input-group-append">
                                                     <button type="submit" class="btn btn-default">
@@ -267,9 +252,7 @@ File
                                                         doner.</td>
                                                     <td>
                                                         <div class="btn-group">
-                                                            <button type="button"
-                                                                class="btn btn-default dropdown-toggle dropdown-icon"
-                                                                data-toggle="dropdown">
+                                                            <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
                                                                 Action<span class="sr-only">Toggle Dropdown</span>
                                                             </button>
                                                             <div class="dropdown-menu" role="menu">
@@ -288,9 +271,7 @@ File
                                                         doner.</td>
                                                     <td>
                                                         <div class="btn-group">
-                                                            <button type="button"
-                                                                class="btn btn-default dropdown-toggle dropdown-icon"
-                                                                data-toggle="dropdown">
+                                                            <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
                                                                 Action<span class="sr-only">Toggle Dropdown</span>
                                                             </button>
                                                             <div class="dropdown-menu" role="menu">

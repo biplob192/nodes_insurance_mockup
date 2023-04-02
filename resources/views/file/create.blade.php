@@ -459,17 +459,6 @@ Create File
             </form>
         </div>
     </div>
-    <!-- <div class="card">
-                    <div class="card-header">
-                        <h5 class="card-title"><strong>CREATE FILE</strong></h5>
-                    </div>
-                    <div class="card-body">
-
-                    </div>
-                </div> -->
-</div>
-</div>
-</div>
 </div>
 <!-- /.content -->
 @endsection
