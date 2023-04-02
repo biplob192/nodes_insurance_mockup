@@ -159,7 +159,7 @@ File
                                                             </button>
                                                             <div class="dropdown-menu" role="menu">
                                                                 <a class="dropdown-item" href="#">Delete</a>
-                                                                <a class="dropdown-item" href="{{route('files.show')}}">Download</a>
+                                                                <a class="dropdown-item" href="{{route('ddreport.download')}}">Download</a>
                                                             </div>
                                                         </div>
                                                     </td>
@@ -177,7 +177,7 @@ File
                                                             </button>
                                                             <div class="dropdown-menu" role="menu">
                                                                 <a class="dropdown-item" href="#">Delete</a>
-                                                                <a class="dropdown-item" href="#">Download</a>
+                                                                <a class="dropdown-item" href="{{route('ddreport.download')}}">Download</a>
                                                             </div>
                                                         </div>
                                                     </td>
@@ -195,8 +195,7 @@ File
                                                             </button>
                                                             <div class="dropdown-menu" role="menu">
                                                                 <a class="dropdown-item" href="#">Delete</a>
-                                                                <a class="dropdown-item" href="#">Download</a>
-
+                                                                <a class="dropdown-item" href="{{route('ddreport.download')}}">Download</a>
                                                             </div>
                                                         </div>
                                                     </td>
