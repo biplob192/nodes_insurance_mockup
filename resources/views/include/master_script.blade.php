@@ -6,9 +6,11 @@
 <script src="{{asset('plugins')}}/bs-custom-file-input/bs-custom-file-input.min.js"></script>
 <!-- AdminLTE App -->
 <script src="{{asset('dist')}}/js/adminlte.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 
 <script>
-    $(function () {
+    $(function() {
         /*** add active class and stay opened when selected ***/
         var url = window.location;
 
@@ -21,9 +23,9 @@
 
         // for the treeview
         $('ul.nav-treeview a').filter(function() {
-        if (this.href) {
-        return this.href == url || url.href.indexOf(this.href) == 0;
-        }
+            if (this.href) {
+                return this.href == url || url.href.indexOf(this.href) == 0;
+            }
         }).parentsUntil(".nav-sidebar > .nav-treeview").addClass('menu-open').prev('a').addClass('active');
     });
 </script>

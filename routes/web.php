@@ -5,6 +5,7 @@ use App\Http\Controllers\FileController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\GoogleController;
+use App\Http\Controllers\DownloadController;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\InspectorController;
@@ -67,6 +68,9 @@ Route::group(['middleware' => 'login'], function () {
         Route::get('files', [FileController::class, 'index'])->name('files.index');
         Route::get('create', [FileController::class, 'create'])->name('files.create');
         Route::get('details', [FileController::class, 'show'])->name('files.show');
+
+        Route::get('download/file', [DownloadController::class, 'downloadFile'])->name('file.download');
+        Route::get('download/ddreport', [DownloadController::class, 'downloadDdReport'])->name('ddreport.download');
     });
 });
 
