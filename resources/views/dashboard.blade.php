@@ -21,107 +21,107 @@ Dashboard
                     </div>
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-lg-3 col-6">
+                            <div class="col-lg-3 col-6" >
                                 <!-- small card -->
-                                <div class="small-box bg-info">
+                                <div class="small-box" style="background-color:#869fbb; color: white">
                                     <div class="inner">
                                         <h3>150</h3>
 
-                                        <p>New Orders</p>
+                                        <p>Total Files</p>
                                     </div>
                                     <div class="icon">
-                                        <i class="fas fa-shopping-cart"></i>
+                                        <i class="fas fa-file"></i>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-6">
                                 <!-- small card -->
-                                <div class="small-box bg-info">
+                                <div class="small-box" style="background-color:#0c8671; color: white">
                                     <div class="inner">
                                         <h3>150</h3>
 
-                                        <p>New Orders</p>
+                                        <p>Completed Files</p>
                                     </div>
                                     <div class="icon">
-                                        <i class="fas fa-shopping-cart"></i>
+                                        <i class="fas fa-briefcase"></i>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-6">
                                 <!-- small card -->
-                                <div class="small-box bg-info">
+                                <div class="small-box" style="background-color:#1a606c; color: white">
                                     <div class="inner">
                                         <h3>150</h3>
 
-                                        <p>New Orders</p>
+                                        <p>Total Inspection</p>
                                     </div>
                                     <div class="icon">
-                                        <i class="fas fa-shopping-cart"></i>
+                                        <i class="fab fa-docker"></i>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-6">
                                 <!-- small card -->
-                                <div class="small-box bg-info">
+                                <div class="small-box" style="background-color:#0fa58c; color: white">
                                     <div class="inner">
                                         <h3>150</h3>
 
-                                        <p>New Orders</p>
+                                        <p>Completed Survey</p>
                                     </div>
                                     <div class="icon">
-                                        <i class="fas fa-shopping-cart"></i>
+                                        <i class="fab fa-codiepie"></i>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-6">
                                 <!-- small card -->
-                                <div class="small-box bg-info">
+                                <div class="small-box" style="background-color:#54a1de; color: white">
                                     <div class="inner">
                                         <h3>150</h3>
 
-                                        <p>New Orders</p>
+                                        <p>Total Invoice</p>
                                     </div>
                                     <div class="icon">
-                                        <i class="fas fa-shopping-cart"></i>
+                                        <i class="fab fa-btc"></i>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-6">
                                 <!-- small card -->
-                                <div class="small-box bg-info">
+                                <div class="small-box" style="background-color:#2478bb; color: white">
                                     <div class="inner">
                                         <h3>150</h3>
 
-                                        <p>New Orders</p>
+                                        <p>Total Remittance</p>
                                     </div>
                                     <div class="icon">
-                                        <i class="fas fa-shopping-cart"></i>
+                                        <i class="fab fa-btc"></i>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-6">
                                 <!-- small card -->
-                                <div class="small-box bg-info">
+                                <div class="small-box bg-info" style="background-color:#01579b; color: white">
                                     <div class="inner">
                                         <h3>150</h3>
 
-                                        <p>New Orders</p>
+                                        <p>Outstanding Amount</p>
                                     </div>
                                     <div class="icon">
-                                        <i class="fas fa-shopping-cart"></i>
+                                        <i class="fab fa-btc"></i>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-6">
                                 <!-- small card -->
-                                <div class="small-box bg-info">
+                                <div class="small-box" style="background-color:#27496e; color: white">
                                     <div class="inner">
                                         <h3>150</h3>
 
-                                        <p>New Orders</p>
+                                        <p>Total Inspectors</p>
                                     </div>
                                     <div class="icon">
-                                        <i class="fas fa-shopping-cart"></i>
+                                        <i class="fas fa-user-alt"></i>
                                     </div>
                                 </div>
                             </div>
@@ -133,7 +133,7 @@ Dashboard
                                     <div class="card-header">
                                         <h3 class="card-title">
                                             <i class="far fa-chart-bar"></i>
-                                            Donut Chart
+                                            Survey Status
                                         </h3>
 
                                         <div class="card-tools">
@@ -157,7 +157,7 @@ Dashboard
                                     <div class="card-header">
                                         <h3 class="card-title">
                                             <i class="far fa-chart-bar"></i>
-                                            Bar Chart
+                                            Total Number of Files
                                         </h3>
 
                                         <div class="card-tools">
@@ -315,7 +315,13 @@ Dashboard
                 [3, 4],
                 [4, 13],
                 [5, 17],
-                [6, 9]
+                [6, 9],
+                [7, 10],
+                [8, 8],
+                [9, 4],
+                [10, 13],
+                [11, 17],
+                [12, 9]
             ],
             bars: {
                 show: true
@@ -342,7 +348,13 @@ Dashboard
                     [3, 'March'],
                     [4, 'April'],
                     [5, 'May'],
-                    [6, 'June']
+                    [6, 'June'],
+                    [7, 'July'],
+                    [8, 'August'],
+                    [9, 'September'],
+                    [10, 'October'],
+                    [11, 'November'],
+                    [12, 'December']
                 ]
             }
         })
@@ -354,17 +366,17 @@ Dashboard
          */
 
         var donutData = [{
-                label: 'Series2',
+                label: 'Completed',
                 data: 30,
                 color: '#3c8dbc'
             },
             {
-                label: 'Series3',
+                label: 'Pending',
                 data: 20,
                 color: '#0073b7'
             },
             {
-                label: 'Series4',
+                label: 'Not Assigned',
                 data: 50,
                 color: '#00c0ef'
             }

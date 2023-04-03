@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RoleController;
 use App\Http\Controllers\FileController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\UserController;
@@ -68,6 +69,8 @@ Route::group(['middleware' => 'login'], function () {
         Route::get('files', [FileController::class, 'index'])->name('files.index');
         Route::get('create', [FileController::class, 'create'])->name('files.create');
         Route::get('details', [FileController::class, 'show'])->name('files.show');
+
+        Route::get('roles', [RoleController::class, 'index'])->name('roles.index');
 
         Route::get('download/file', [DownloadController::class, 'downloadFile'])->name('file.download');
         Route::get('download/ddreport', [DownloadController::class, 'downloadDdReport'])->name('ddreport.download');

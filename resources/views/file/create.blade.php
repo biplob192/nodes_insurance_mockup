@@ -84,19 +84,6 @@ Create File
                                 <div class="col-sm-3">
                                     <!-- select -->
                                     <div class="form-group">
-                                        <label>Select</label>
-                                        <select class="form-control">
-                                            <option>option 1</option>
-                                            <option>option 2</option>
-                                            <option>option 3</option>
-                                            <option>option 4</option>
-                                            <option>option 5</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <!-- select -->
-                                    <div class="form-group">
                                         <label for="exampleInputFile">File input</label>
                                         <div class="input-group">
                                             <div class="custom-file">
@@ -104,9 +91,6 @@ Create File
                                                 <label class="custom-file-label" for="exampleInputFile">Choose
                                                     file</label>
                                             </div>
-                                            <!-- <div class="input-group-append">
-                                            <span class="input-group-text">Upload</span>
-                                        </div> -->
                                         </div>
                                     </div>
                                 </div>

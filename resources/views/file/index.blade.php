@@ -38,89 +38,80 @@ File Index
                                         <table class="table table-hover text-nowrap">
                                             <thead>
                                                 <tr>
-                                                    <th>ID</th>
-                                                    <th>Name</th>
-                                                    <th>Description</th>
-                                                    <th>Action</th>
+                                                    <th style="text-align: center;">File Ref. No.</th>
+                                                    <th style="text-align: center;">Location of Risk</th>
+                                                    <th style="text-align: center;">Date</th>
+                                                    <th style="text-align: center;">Risk Renewal Date</th>
+                                                    <th style="text-align: center;">Insured Name </th>
+                                                    <th style="text-align: center;">Status</th>
+                                                    <th style="text-align: center;">Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>183</td>
-                                                    <td>John Doe</td>
-                                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback
-                                                        doner.</td>
-                                                    <td>
+                                                    <td style="text-align: center;">101</td>
+                                                    <td style="text-align: center;">F-38,Justin Road,<br> Hurdiyara sharani</td>
+                                                    <td style="text-align: center;">12/03/2023</td>
+                                                    <td style="text-align: center;">17/03/2023</td>
+                                                    <td style="text-align: center;">John Doe</td>
+                                                    <td style="text-align: center; color:#3CB371">Completed</td>
+                                                    <td style="text-align: center;">
                                                         <div class="btn-group">
                                                             <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
                                                                 Action<span class="sr-only">Toggle Dropdown</span>
                                                             </button>
                                                             <div class="dropdown-menu" role="menu">
-                                                                <a class="dropdown-item" href="#">Edit</a>
-                                                                <a class="dropdown-item" href="#">Delete</a>
                                                                 <a class="dropdown-item" href="{{route('files.show')}}">More</a>
-                                                                <a class="dropdown-item" href="#">Details</a>
-                                                                <a class="dropdown-item" href="#">Download</a>
+                                                                <a class="dropdown-item" href="#" >Edit</a>
+                                                                <a class="dropdown-item" href="#" >Delete</a>
+                                                                <a class="dropdown-item" href="#" >Details</a>
+                                                                <a class="dropdown-item" href="#" >Download</a>
                                                             </div>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>219</td>
-                                                    <td>Alexander Pierce</td>
-                                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback
-                                                        doner.</td>
-                                                    <td>
+                                                    <td style="text-align: center;">102</td>
+                                                    <td style="text-align: center;">F-38,Justin Road,<br> Hurdiyara sharani</td>
+                                                    <td style="text-align: center;">13/03/2023</td>
+                                                    <td style="text-align: center;">18/03/2023</td>
+                                                    <td style="text-align: center;">Johnar Dewal</td>
+                                                    <td style="text-align: center;color: #FFA500">Pending</td>
+                                                    <td style="text-align: center;">
                                                         <div class="btn-group">
                                                             <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
                                                                 Action<span class="sr-only">Toggle Dropdown</span>
                                                             </button>
                                                             <div class="dropdown-menu" role="menu">
-                                                                <a class="dropdown-item" href="#">Edit</a>
-                                                                <a class="dropdown-item" href="#">Delete</a>
                                                                 <a class="dropdown-item" href="{{route('files.show')}}">More</a>
-                                                                <a class="dropdown-item" href="#">Details</a>
-                                                                <a class="dropdown-item" href="#">Download</a>
+                                                                <a class="dropdown-item" href="#" >Edit</a>
+                                                                <a class="dropdown-item" href="#" >Delete</a>
+                                                                <a class="dropdown-item" href="#" >Details</a>
+                                                                <a class="dropdown-item" href="#" >Download</a>
                                                             </div>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>657</td>
-                                                    <td>Bob Doe</td>
-                                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback
-                                                        doner.</td>
-                                                    <td>
-                                                        <div class="btn-group">
-                                                            <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
-                                                                Action<span class="sr-only">Toggle Dropdown</span>
-                                                            </button>
-                                                            <div class="dropdown-menu" role="menu">
-                                                                <a class="dropdown-item" href="#">Edit</a>
-                                                                <a class="dropdown-item" href="#">Delete</a>
-                                                                <a class="dropdown-item" href="{{route('files.show')}}">More</a>
-                                                                <a class="dropdown-item" href="#">Details</a>
-                                                                <a class="dropdown-item" href="#">Download</a>
-                                                            </div>
-                                                        </div>
+                                                    <td style="text-align: center;">103</td>
+                                                    <td style="text-align: center;">F-38,Justin Road,
+                                                        <br> Hurdiyara sharani
                                                     </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>175</td>
-                                                    <td>Mike Doe</td>
-                                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback
-                                                        doner.</td>
-                                                    <td>
+                                                    <td style="text-align: center;">12/03/2023</td>
+                                                    <td style="text-align: center;">17/03/2023</td>
+                                                    <td style="text-align: center;">John Doe</td>
+                                                    <td style="text-align: center;color: #C11B17;"> Not Started</td>
+                                                    <td style="text-align: center;">
                                                         <div class="btn-group">
-                                                            <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
+                                                            <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown" >
                                                                 Action<span class="sr-only">Toggle Dropdown</span>
                                                             </button>
                                                             <div class="dropdown-menu" role="menu">
-                                                                <a class="dropdown-item" href="#">Edit</a>
-                                                                <a class="dropdown-item" href="#">Delete</a>
-                                                                <a class="dropdown-item" href="{{route('files.show')}}">More</a>
-                                                                <a class="dropdown-item" href="#">Details</a>
-                                                                <a class="dropdown-item" href="#">Download</a>
+                                                                <a class="dropdown-item" href="{{route('files.show')}}"> More</a>
+                                                                <a class="dropdown-item" href="#" >Edit</a>
+                                                                <a class="dropdown-item" href="#" >Delete</a>
+                                                                <a class="dropdown-item" href="#" >Details</a>
+                                                                <a class="dropdown-item" href="#" >Download</a>
                                                             </div>
                                                         </div>
                                                     </td>
