@@ -24,7 +24,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a class="nav-link">
                         <i class="nav-icon fas fa-folder"></i>
                         <p>
                             File
@@ -71,7 +71,7 @@
                     </a>
                 </li> --}}
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a class="nav-link">
                         <i class="nav-icon fas fa-tools"></i>
                         <p>
                             Settings
