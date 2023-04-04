@@ -33,14 +33,10 @@ Category Index
                                             @csrf
                                             <div class="card-body">
                                                 <div class="form-group">
-                                                    <label for="name">Category Name</label>
-                                                    <input type="text" class="form-control" id="name" placeholder="Enter category name" name="name">
-                                                </div>
-                                                <div class="form-group">
                                                     <label for="user_type">Category Type</label>
                                                     <select class="form-control" name="user_type">
-                                                        <option value="1">Category Type</option>
-                                                        <option value="2" selected>Another Type</option>
+                                                        <option value="1">Type 1</option>
+                                                        <option value="2" selected>Type 2</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
@@ -88,16 +84,16 @@ Category Index
                                             <thead>
                                                 <tr>
                                                     <th>ID</th>
-                                                    <th>Name</th>
+                                                    <th>Type</th>
                                                     <th>Description</th>
                                                     <th>Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>183</td>
-                                                    <td>John Doe</td>
-                                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                                    <td>121</td>
+                                                    <td>Type 1</td>
+                                                    <td>Bacon ipsum dolor sit amet salami venison chicken.</td>
                                                     <td>
                                                         <div class="btn-group">
                                                             <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
@@ -111,9 +107,9 @@ Category Index
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>219</td>
-                                                    <td>Alexander Pierce</td>
-                                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                                    <td>122</td>
+                                                    <td>Type 2</td>
+                                                    <td>Venison chicken flank fatback doner.</td>
                                                     <td>
                                                         <div class="btn-group">
                                                             <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
@@ -127,25 +123,9 @@ Category Index
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>657</td>
-                                                    <td>Bob Doe</td>
-                                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                                                    <td>
-                                                        <div class="btn-group">
-                                                            <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
-                                                                Action<span class="sr-only">Toggle Dropdown</span>
-                                                            </button>
-                                                            <div class="dropdown-menu" role="menu">
-                                                                <a class="dropdown-item" href="#">Edit</a>
-                                                                <a class="dropdown-item" href="#">Delete</a>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>175</td>
-                                                    <td>Mike Doe</td>
-                                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                                    <td>123</td>
+                                                    <td>Type 1</td>
+                                                    <td>Bacon ipsum flank fatback doner.</td>
                                                     <td>
                                                         <div class="btn-group">
                                                             <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">

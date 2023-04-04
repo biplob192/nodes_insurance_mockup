@@ -308,11 +308,11 @@ Create File
                             <div class="form-group">
                                 <label>Year </label>
                                 <select class="form-control">
-                                    <option>option 1</option>
-                                    <option>option 2</option>
-                                    <option>option 3</option>
-                                    <option>option 4</option>
-                                    <option>option 5</option>
+                                    <option>1991</option>
+                                    <option>1992</option>
+                                    <option>1993</option>
+                                    <option>1994</option>
+                                    <option>2023</option>
                                 </select>
                             </div>
                         </div>
@@ -321,11 +321,11 @@ Create File
                             <div class="form-group">
                                 <label>Department </label>
                                 <select class="form-control">
-                                    <option>option 1</option>
-                                    <option>option 2</option>
-                                    <option>option 3</option>
-                                    <option>option 4</option>
-                                    <option>option 5</option>
+                                    <option>Department 1</option>
+                                    <option>Department 2</option>
+                                    <option>Department 3</option>
+                                    <option>Department 4</option>
+                                    <option>Department 5</option>
                                 </select>
                             </div>
                         </div>

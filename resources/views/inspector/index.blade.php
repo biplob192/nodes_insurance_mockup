@@ -32,50 +32,70 @@ Inspector Index
                                         <form action="{{route('users.store')}}" method="post" enctype="multipart/form-data">
                                             @csrf
                                             <div class="card-body">
-                                                <div class="form-group">
-                                                    <label for="name">Full Name</label>
-                                                    <input type="text" class="form-control" id="name" placeholder="Enter full name" name="name">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="user_type">User Type</label>
-                                                    <select class="form-control" name="user_type">
-                                                        <option value="1">Admin</option>
-                                                        <option value="2" selected>Employee</option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="email">Email address</label>
-                                                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="address">Address</label>
-                                                    <input type="text" class="form-control" id="address" placeholder="Enter address" name="address">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="phone">Phone</label>
-                                                    <input type="text" class="form-control" id="phone" placeholder="Enter phone" name="phone">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="emergency_contact">Emergency Phone</label>
-                                                    <input type="text" class="form-control" id="emergency_contact" placeholder="Enter emergency_contact" name="emergency_contact">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="password">Password</label>
-                                                    <input type="password" class="form-control" id="password" placeholder="Password" name="password">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="password_confirmation">Confirm Password</label>
-                                                    <input type="password" class="form-control" id="password_confirmation" placeholder="Confirm Password" name="password_confirmation">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="profile_image">Profile Image</label>
-                                                    <div class="input-group">
-                                                        <div class="custom-file">
-                                                            <input type="file" class="custom-file-input" id="profile_image" name="profile_image">
-                                                            <label class="custom-file-label" for="profile_image">Choose file</label>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="name">Name</label>
+                                                            <input type="text" class="form-control" id="name" placeholder="Enter full name" name="name">
                                                         </div>
-                                                        <div class="input-group-append">
-                                                            <span class="input-group-text">Upload</span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="user_type">Inspector Type</label>
+                                                            <select class="form-control" name="user_type">
+                                                                <option value="1">Junior</option>
+                                                                <option value="2" selected>Senior</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="email">Email address</label>
+                                                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="address">Address</label>
+                                                            <input type="text" class="form-control" id="address" placeholder="Enter address" name="address">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="phone">Phone</label>
+                                                            <input type="text" class="form-control" id="phone" placeholder="Enter phone" name="phone">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="emergency_contact">Emergency Phone</label>
+                                                            <input type="text" class="form-control" id="emergency_contact" placeholder="Enter emergency_contact" name="emergency_contact">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="password">Password</label>
+                                                            <input type="password" class="form-control" id="password" placeholder="Password" name="password">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="password_confirmation">Confirm Password</label>
+                                                            <input type="password" class="form-control" id="password_confirmation" placeholder="Confirm Password" name="password_confirmation">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="profile_image">Profile Image</label>
+                                                            <div class="input-group">
+                                                                <div class="custom-file">
+                                                                    <input type="file" class="custom-file-input" id="profile_image" name="profile_image">
+                                                                    <label class="custom-file-label" for="profile_image">Choose file</label>
+                                                                </div>
+                                                                <!-- <div class="input-group-append">
+                                                                    <span class="input-group-text">Upload</span>
+                                                                </div> -->
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -120,16 +140,20 @@ Inspector Index
                                             <thead>
                                                 <tr>
                                                     <th>ID</th>
-                                                    <th>Role</th>
-                                                    <th>Description</th>
+                                                    <th>Name</th>
+                                                    <th>Email</th>
+                                                    <th>Inspector Type</th>
+                                                    <th>Phone No.</th>
                                                     <th>Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>183</td>
+                                                    <td>221</td>
                                                     <td>John Doe</td>
-                                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                                    <td>Bacon@gmail.com</td>
+                                                    <td>Senior</td>
+                                                    <td>1234567890</td>
                                                     <td>
                                                         <div class="btn-group">
                                                             <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
@@ -143,9 +167,11 @@ Inspector Index
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>219</td>
+                                                    <td>222</td>
                                                     <td>Alexander Pierce</td>
-                                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                                    <td>ipsum@gmail.com</td>
+                                                    <td>Junior</td>
+                                                    <td>19243567820</td>
                                                     <td>
                                                         <div class="btn-group">
                                                             <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
@@ -159,25 +185,11 @@ Inspector Index
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>657</td>
+                                                    <td>223</td>
                                                     <td>Bob Doe</td>
-                                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                                                    <td>
-                                                        <div class="btn-group">
-                                                            <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
-                                                                Action<span class="sr-only">Toggle Dropdown</span>
-                                                            </button>
-                                                            <div class="dropdown-menu" role="menu">
-                                                                <a class="dropdown-item" href="#">Edit</a>
-                                                                <a class="dropdown-item" href="#">Delete</a>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>175</td>
-                                                    <td>Mike Doe</td>
-                                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                                    <td>dolor@gmail.com</td>
+                                                    <td>Senior</td>
+                                                    <td>19243567820</td>
                                                     <td>
                                                         <div class="btn-group">
                                                             <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
