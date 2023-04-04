@@ -152,7 +152,7 @@ File
                                                     <td style="text-align: center;">12/03/2023</td>
                                                     <td style="text-align: center;">17/03/2023</td>
                                                     <td style="text-align: center;">John Doe</td>
-                                                    <td style="text-align: center; color:#3CB371">Completed</td>
+                                                    <td style="text-align: center; color:#3CB371;font-weight:bold">Completed</td>
                                                     <td style="text-align: center;">
                                                         <div class="btn-group">
                                                             <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
@@ -214,7 +214,7 @@ File
                                                     <td style="text-align: center;">201</td>
                                                     <td style="text-align: center;">Senior</td>
                                                     <td style="text-align: center;">John Doe</td>
-                                                    <td style="text-align: center; color:#3CB371">Completed</td>
+                                                    <td style="text-align: center; color:#3CB371;font-weight:bold">Completed</td>
                                                     <td style="text-align: center;">
                                                         <div class="btn-group">
                                                             <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
@@ -223,7 +223,7 @@ File
                                                             <div class="dropdown-menu" role="menu">
                                                                 <a class="dropdown-item" href="#">Assign Inspector</a>  
                                                                 <a class="dropdown-item" href="{{route('ddreport.download')}}">Download Report</a>
-                                                                <a class="dropdown-item" href="#">Delete</a>
+                                                                <a class="dropdown-item" href="#" onclick="confirmDelete(event)">Delete</a>
                                                             </div>
                                                         </div>
                                                     </td>
@@ -232,7 +232,7 @@ File
                                                     <td style="text-align: center;">202</td>
                                                     <td style="text-align: center;">Junior</td>
                                                     <td style="text-align: center;">Johny Doeal</td>
-                                                    <td style="text-align: center; color:#FFA500">Pending</td>
+                                                    <td style="text-align: center; color:#FFA500;font-weight:bold">Pending</td>
                                                     <td style="text-align: center;">
                                                         <div class="btn-group">
                                                             <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
@@ -241,7 +241,7 @@ File
                                                             <div class="dropdown-menu" role="menu">
                                                                 <a class="dropdown-item" href="#">Assign Inspector</a>  
                                                                 <a class="dropdown-item" href="{{route('ddreport.download')}}">Download Report</a>
-                                                                <a class="dropdown-item" href="#">Delete</a>
+                                                                <a class="dropdown-item" href="#" onclick="confirmDelete(event)">Delete</a>
                                                             </div>
                                                         </div>
                                                     </td>
@@ -301,7 +301,7 @@ File
                                                                 Action<span class="sr-only">Toggle Dropdown</span>
                                                             </button>
                                                             <div class="dropdown-menu" role="menu">
-                                                                <a class="dropdown-item" href="#">Delete</a>
+                                                                <a class="dropdown-item" href="#" onclick="confirmDelete(event)">Delete</a>
                                                                 <a class="dropdown-item" href="#">Time Log</a>
                                                                 <a class="dropdown-item" href="#">Invoice</a>
                                                             </div>
@@ -319,7 +319,7 @@ File
                                                                 Action<span class="sr-only">Toggle Dropdown</span>
                                                             </button>
                                                             <div class="dropdown-menu" role="menu">
-                                                                <a class="dropdown-item" href="#">Delete</a>
+                                                                <a class="dropdown-item" href="#" onclick="confirmDelete(event)">Delete</a>
                                                                 <a class="dropdown-item" href="#">Time Log</a>
                                                                 <a class="dropdown-item" href="#">Invoice</a>
                                                             </div>
@@ -344,4 +344,31 @@ File
 @endsection
 
 @section('Script')
+<script src="vendor/sweetalert/sweetalert.all.js"></script>
+<script>
+    function confirmDelete(e) {
+        e.preventDefault();
+
+        const url = e.target.closest("a");
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                    'Deleted!',
+                    'Your file has been deleted.',
+                    'success'
+                )
+
+                // location.reload();
+            }
+        });
+    }
+</script>
 @endsection

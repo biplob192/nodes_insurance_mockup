@@ -161,7 +161,7 @@ Inspector Index
                                                             </button>
                                                             <div class="dropdown-menu" role="menu">
                                                                 <a class="dropdown-item" href="#">Edit</a>
-                                                                <a class="dropdown-item" href="#">Delete</a>
+                                                                <a class="dropdown-item" href="#" onclick="confirmDelete(event)">Delete</a>
                                                             </div>
                                                         </div>
                                                     </td>
@@ -179,7 +179,7 @@ Inspector Index
                                                             </button>
                                                             <div class="dropdown-menu" role="menu">
                                                                 <a class="dropdown-item" href="#">Edit</a>
-                                                                <a class="dropdown-item" href="#">Delete</a>
+                                                                <a class="dropdown-item" href="#" onclick="confirmDelete(event)">Delete</a>
                                                             </div>
                                                         </div>
                                                     </td>
@@ -197,7 +197,7 @@ Inspector Index
                                                             </button>
                                                             <div class="dropdown-menu" role="menu">
                                                                 <a class="dropdown-item" href="#">Edit</a>
-                                                                <a class="dropdown-item" href="#">Delete</a>
+                                                                <a class="dropdown-item" href="#" onclick="confirmDelete(event)">Delete</a>
                                                             </div>
                                                         </div>
                                                     </td>
@@ -229,4 +229,31 @@ Inspector Index
 @endsection
 
 @section('Script')
+<script src="vendor/sweetalert/sweetalert.all.js"></script>
+<script>
+    function confirmDelete(e) {
+        e.preventDefault();
+
+        const url = e.target.closest("a");
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                    'Deleted!',
+                    'Your file has been deleted.',
+                    'success'
+                )
+
+                // location.reload();
+            }
+        });
+    }
+</script>
 @endsection

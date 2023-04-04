@@ -3,7 +3,7 @@
     <!-- Brand Logo -->
     <a href="/" class="brand-link">
         <img src="{{asset('/dist/img/AdminLTELogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light">NODES DIGITAL</span>
+        <span class="brand-text font-weight-light">ORCA INSURANCE</span>
     </a>
 
     <!-- Sidebar -->
@@ -24,7 +24,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a class="nav-link">
                         <i class="nav-icon fas fa-folder"></i>
                         <p>
                             File
@@ -98,7 +98,7 @@
                     </a>
                 </li> --}}
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a class="nav-link">
                         <i class="nav-icon fas fa-tools"></i>
                         <p>
                             Settings

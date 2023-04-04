@@ -54,7 +54,7 @@ File Index
                                                     <td style="text-align: center;">12/03/2023</td>
                                                     <td style="text-align: center;">17/03/2023</td>
                                                     <td style="text-align: center;">John Doe</td>
-                                                    <td style="text-align: center; color:#3CB371">Completed</td>
+                                                    <td style="text-align: center; color:#3CB371; font-weight:bold">Completed</td>
                                                     <td style="text-align: center;">
                                                         <div class="btn-group">
                                                             <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
@@ -63,7 +63,7 @@ File Index
                                                             <div class="dropdown-menu" role="menu">
                                                                 <a class="dropdown-item" href="{{route('files.show')}}">More</a>
                                                                 <a class="dropdown-item" href="#" >Edit</a>
-                                                                <a class="dropdown-item" href="#" >Delete</a>
+                                                                <a class="dropdown-item" href="#" onclick="confirmDelete(event)">Delete</a>
                                                                 <a class="dropdown-item" href="#" >Details</a>
                                                                 <a class="dropdown-item" href="#" >Download</a>
                                                             </div>
@@ -76,7 +76,7 @@ File Index
                                                     <td style="text-align: center;">13/03/2023</td>
                                                     <td style="text-align: center;">18/03/2023</td>
                                                     <td style="text-align: center;">Johnar Dewal</td>
-                                                    <td style="text-align: center;color: #FFA500">Pending</td>
+                                                    <td style="text-align: center;color: #FFA500; font-weight:bold">Pending</td>
                                                     <td style="text-align: center;">
                                                         <div class="btn-group">
                                                             <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
@@ -85,7 +85,7 @@ File Index
                                                             <div class="dropdown-menu" role="menu">
                                                                 <a class="dropdown-item" href="{{route('files.show')}}">More</a>
                                                                 <a class="dropdown-item" href="#" >Edit</a>
-                                                                <a class="dropdown-item" href="#" >Delete</a>
+                                                                <a class="dropdown-item" href="#" onclick="confirmDelete(event)">Delete</a>
                                                                 <a class="dropdown-item" href="#" >Details</a>
                                                                 <a class="dropdown-item" href="#" >Download</a>
                                                             </div>
@@ -100,7 +100,7 @@ File Index
                                                     <td style="text-align: center;">12/03/2023</td>
                                                     <td style="text-align: center;">17/03/2023</td>
                                                     <td style="text-align: center;">John Doe</td>
-                                                    <td style="text-align: center;color: #C11B17;"> Not Started</td>
+                                                    <td style="text-align: center;color: #C11B17;font-weight:bold"> Not Started</td>
                                                     <td style="text-align: center;">
                                                         <div class="btn-group">
                                                             <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown" >
@@ -109,7 +109,7 @@ File Index
                                                             <div class="dropdown-menu" role="menu">
                                                                 <a class="dropdown-item" href="{{route('files.show')}}"> More</a>
                                                                 <a class="dropdown-item" href="#" >Edit</a>
-                                                                <a class="dropdown-item" href="#" >Delete</a>
+                                                                <a class="dropdown-item" href="#" onclick="confirmDelete(event)">Delete</a>
                                                                 <a class="dropdown-item" href="#" >Details</a>
                                                                 <a class="dropdown-item" href="#" >Download</a>
                                                             </div>
@@ -143,4 +143,31 @@ File Index
 @endsection
 
 @section('Script')
+<script src="vendor/sweetalert/sweetalert.all.js"></script>
+<script>
+    function confirmDelete(e) {
+        e.preventDefault();
+
+        const url = e.target.closest("a");
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                    'Deleted!',
+                    'Your file has been deleted.',
+                    'success'
+                )
+
+                // location.reload();
+            }
+        });
+    }
+</script>
 @endsection
